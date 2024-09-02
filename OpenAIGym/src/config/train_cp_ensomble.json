@@ -1,0 +1,45 @@
+{
+    
+    "output_parent_folder": "_cp_huge_run",
+
+    "training_config": {
+        "training_data_folder": "demonstration_dataset_100_0.5action",
+        "defualt_demonstrations": {
+            "number_of_defualt_demonstrations": 10,
+            "default_demonstrations_ids" : null
+        },
+        "number_of_requestable_demonstrations": 10
+    },
+
+    "ensoemble_config": {
+        "number_of_ensomble_models": 5,
+        "temperature": 0.3,
+        "delta": 30
+    },
+
+    "testing_runs": 10,
+
+    "base_config": {
+        "action_max_min" : 0.1,
+        "l1" : 1.0,
+        "l2" : 1.0,
+        "goal" : {
+            "random_range":
+            {
+                "x": [-1.5, 1.5],
+                "y": [-1.5, 1.5]
+            }
+
+        },
+        "max_steps": 500,
+        "initial_position" : {
+            "random_range":
+            {
+                "x": [-1.5, 1.5],
+                "y": [-1.5, 1.5]
+            }
+        },
+        "output_folder": "baseline_test",
+        "algorithm": "conformal_prediction_ensomble"
+    }
+}
