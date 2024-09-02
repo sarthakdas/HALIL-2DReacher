@@ -1,4 +1,3 @@
-```markdown
 # HALIL-2DReacher: A Guide to Setup, Dataset Generation, and Training
 
 ## 1. Setup
